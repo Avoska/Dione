@@ -1,15 +1,9 @@
-@media(max-width:1381px){
-    .main{
-        width: 50px;
-    }
-}
-@media(min-width:1381px){
-    .main{
-            width: 50px;
-        }
-}
-body{
+@font-face {
     font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.otf);
+   }
+body{
+    font-family: Montserrat-Regular !important;
     font-style: normal;
 }
 .navbar{
@@ -19,12 +13,11 @@ body{
     height: 108px;
 }
 .navbar-brand{
-
-
-
+    border-top-left-radius: 20px;
+    width: 200px;
     height: 108px;
-    width: 250px;
-    background-image: url("../img/logo.gif");
+    background-image: url("../img/logo_bg.gif");
+
 }
 .btn1{
     font-size: 25px;
@@ -99,25 +92,27 @@ body{
     color:aqua;
 }
 .menu{
+    font-family: Montserrat-Regular;
+    font-style: normal;
     top: -20px;
     background-image: url("../img/menu_bg_img.jpg");
-    width: 250px;
+    width: 200px;
     left: 1px;
+    border-bottom-left-radius: 20px;
 }
 .btn_menu1{
+    margin-left: -40px;
     font-family: Montserrat-Regular ;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #6780AA;
-    margin-left: -20px;
     border-color: transparent;
     border-radius: 0px;
     background-color: transparent;
     width: 80%;
 }
 .btn_menu1:hover{
-    margin-top: 20px;
+    margin-top: 10px;
     color: aqua;
-    margin-left: 10%;
     border-color: transparent;
     border-radius: 0px;
     background-color: transparent;
@@ -132,14 +127,13 @@ body{
     list-style-type: none;
 }
 .btn_menu2{
-    margin-top: 30%;
-    font-family: Montserrat-Regular ;
 
-       color: #6780AA;
-       border-color: transparent;
-       border-radius: 0px;
-       background-color: transparent;
-
+    height: 300px;
+    color: #6780AA;
+    border-color: transparent;
+    background-color: transparent;
+    width: 0px;
+    border-bottom-left-radius: 20px;
 }
 .btn_menu2:hover{
 
@@ -149,9 +143,9 @@ body{
     background-color: transparent;
 }
 .menu1{
-    top: -20px;
+    top: -32px;
     background-image: url("../img/menu_bg_img.jpg");
-    width: 250px;
+    width: 200px;
     left: 1px;
     border-bottom-left-radius: 18px;
 }
@@ -162,11 +156,38 @@ body{
     height: auto;
 }
 .column{
-
     top: -20px;
     background-image: url("../img/right_column_bg.jpg");
 
 }
 h5{
     color: #bcc9ca;
+}
+.ddbtn_col{
+    width: 130px;
+    top: 30px;
+}
+.ddbtn{
+    border-radius: 20px;
+    width: 170px;
+}
+.gimenu2{
+    top: 110px;
+    left: 20px;
+    border-bottom-left-radius: 20px;
+}
+.text_color{
+    color: #6780AA;
+}
+.green{
+    color: #3DCB35;
+}
+h3{
+    margin-top: 5px;
+}
+@media (min-width: 992px) and (max-width: 1108px) {
+    .column
+    {
+        visibility: hidden;
+    }
 }
